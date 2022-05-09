@@ -1,0 +1,55 @@
+.conteiner {
+    display: flex;
+    background-color: var(--bg-gray);
+    justify-content: center;
+    height: 100vh;
+    margin-left: 20vw;
+}
+
+main {
+    width: 90%;
+    margin-top: 7vh;
+}
+
+h2 {
+    font-weight: 400, regular;
+    color: rgba(0, 0, 0, 0.44);
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: 33% 33% 32%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+}
+
+@media (max-width:740px) {
+    .card-group{
+        justify-content: center;
+        grid-template-columns: 80%;
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
